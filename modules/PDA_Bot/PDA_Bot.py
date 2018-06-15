@@ -6,7 +6,7 @@ def set_bot(new):
     bot=new
 
 @signals.message_received.connect
-def pda(message):
+def handle(message):
     if (bot!=None):
         bot.process_request(message)
     else:
