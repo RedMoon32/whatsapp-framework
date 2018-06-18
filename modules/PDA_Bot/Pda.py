@@ -8,6 +8,6 @@ def set_bot(new):
 @signals.message_received.connect
 def handle(message):
     if (bot!=None):
-        bot.process_request(message)
+        bot.process_request__(message)
     else:
         pass
